@@ -1,0 +1,29 @@
+.brands{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
+    width: 70%;
+    margin: 100px auto;
+}
+
+.brands img{
+    filter: grayscale(100);
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.brands img:hover{
+    filter: grayscale(0);
+}
+
+@media screen and (max-width:600px) {
+    .brands{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:372px) {
+    .brands{
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+    }
+}

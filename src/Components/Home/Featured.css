@@ -1,0 +1,18 @@
+.featured{
+    background-color: white !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    width: 80%;
+    margin: 75px auto;
+}
+
+.featured img{
+    width: 100%;
+}
+
+@media screen and (max-width:670px) {
+    .featured{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

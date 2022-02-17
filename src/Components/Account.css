@@ -1,0 +1,108 @@
+.account-page{
+    display: grid;
+    background: radial-gradient(#fff, #ffd6d6);
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-side img{
+ width: 100%;
+ margin-top: 3rem;
+}
+.right-side{
+    margin-top: 4rem;
+}
+.form-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+.form-btn{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-button{
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-weight: 600;
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+
+.indicator{
+    width: 26%;
+    height: 3px;
+    background: #ff532b;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.logform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    transition: all 0.5s ease;
+
+}
+.logform input{
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.forgot{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 25px;
+}
+
+.submit{
+    border: 1px solid #ff532b;
+    padding: 10px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    background: #ff532b;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 135px;
+    margin-top: 10px;
+}
+
+.regform{
+    position: absolute;
+    top: 76px;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 840px) {
+    .form-container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .account-page{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-container{
+        width: 90%;
+    }
+}

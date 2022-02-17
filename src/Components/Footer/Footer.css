@@ -1,0 +1,114 @@
+.footer{
+    color: white;
+    background-color: black;
+}
+.column-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    width: 80%;
+    margin: auto;
+    padding-top: 7rem;
+}
+
+hr{
+    display: flex;
+    color: white;
+    height: 3px;
+    width: 80%;
+    margin: 3rem auto;
+
+}
+
+.text-center{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.store{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-top: 1rem;
+}
+.store img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    padding: 2rem;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+}
+
+.center img{
+    width: 200px;
+}
+.center p{
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: #b0b0b0;
+
+}
+
+.apple{
+    margin-left: 0.6rem;
+}
+.list{
+    text-align: center;
+}
+
+.list li{
+    list-style: none;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+}
+
+.list li .decoration{
+    color: #b0b0b0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.list li .decoration:hover{
+    color: white;
+}
+h3{
+    padding-bottom: 1.8rem;
+}
+
+@media screen and (max-width:890px) {
+    .column-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:490px) {
+    .column-4{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .first{
+        text-align: center;
+    }
+    .store{
+       margin: 1rem auto;
+
+    }
+}
+@media screen and (max-width:340px) {
+   .store{
+       flex-direction: column;
+       width: 90%;
+       margin: 1rem auto;
+   }
+   .apple{
+       margin-left: 0 !important;
+       margin-top: 0.8rem !important;
+   }
+   .center{
+       padding: 0 !important;
+   }
+
+}

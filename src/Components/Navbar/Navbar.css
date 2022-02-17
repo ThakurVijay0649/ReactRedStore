@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: radial-gradient(#fff, #ffd6d6);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 6px 9px 20px 12px rgba(0, 0, 0, .2);
+}
+
+.logo img {
+    width: 130px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.cart-icon {
+    text-align: center;
+
+}
+
+.cart-icon img {
+    width: 35px;
+}
+
+.home, .product, .details, .contact, .account {
+    text-decoration: none;
+    color: black !important;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.home:hover{
+    color: gray !important;
+ }
+
+
+.product:hover{
+    color: gray !important;
+ }
+.details:hover{
+    color: gray !important;
+ }
+.contact:hover{
+    color: gray !important;
+ }
+.account:hover{
+    color: gray !important;
+ }
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo img {
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .cart-icon img{
+        margin-bottom: 1rem
+    }
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background: #ff532b;
+        left: 0;
+        top: 65px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+
+    .home, .product, .details, .contact, .account {
+        color: black;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .signup {
+        border: none;
+
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: black;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+        background: radial-gradient(#fff, #ffd6d6);
+
+    }
+
+}

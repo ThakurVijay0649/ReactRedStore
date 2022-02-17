@@ -1,0 +1,48 @@
+.common{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    margin: auto;
+    grid-gap: 2rem;
+    margin-bottom: 8rem;
+}
+
+.common img{
+    width: 100%;
+}
+
+.title h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 60px;
+    padding-bottom: 40px;
+}
+.col{
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .2);
+    padding: 5px;
+    line-height: 2rem;
+
+}
+h4{
+    color: #555;
+    font-weight: bold;
+}
+i{
+    color: #ff532b;
+}
+
+.col:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width: 870px){
+    .common{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 470px){
+    .common{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

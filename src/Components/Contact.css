@@ -1,0 +1,116 @@
+.contact-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: radial-gradient(#fff, #ffd6d6);
+    justify-content: center;
+    padding-bottom: 10rem;
+
+}
+.left-form{
+    width: 100%;
+    padding: 5rem;
+}
+.right-form{
+    width: 100%;
+    padding: 0 5rem;
+}
+.left-form img{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.right-form h1{
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.right-form p{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.inptext{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.inptext input{
+    width: 80%;
+    padding: 11px;
+    margin: 0.7rem 0;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid gray;
+
+}
+
+.inptext textarea{
+    width: 80%;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid gray;
+
+}
+
+.inptext button{
+    width: 35%;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #ff532b;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: #ff532b;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    .left-form img{
+        margin-top: 9rem;
+    }
+    
+}
+@media screen and (max-width: 970px) {
+   .contact-form{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .right-form h1{
+       margin-top: 0 !important;
+   }
+   .left-form{
+       width: 100%;
+       text-align: center;
+   }
+   .right-form{
+       width: 100%;
+       text-align: center;
+   }
+   .left-form img{
+       width: 80%;
+       margin: 0 !important;
+   }
+    .inptext{
+        width: 100%;
+        margin: auto;
+    }
+    .inptext input{
+        width: 100%;
+    }
+    .inptext textarea{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .inptext button{
+        width: 100%;
+    }
+}
