@@ -34,8 +34,8 @@ const Account = () => {
       <div className="right-side">
         <div className="form-container">
           <div className="form-btn">
-            <button className="form-button button1" onClick={login} style={{backgroundColor: logCol}}>Log In</button>
-            <button className="form-button button2" onClick={register} style={{backgroundColor: regCol}}>Register</button>
+            <button className="form-button button1"  onClick={login} style={{backgroundColor: logCol}}>Log In</button>
+            <button className="form-button button2"  onClick={register} style={{backgroundColor: regCol}}>Register</button>
           </div>
           <form  className="logform" style={{left: logStyle}}>
             <input type="text" placeholder='User ID' />

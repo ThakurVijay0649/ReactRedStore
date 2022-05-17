@@ -29,7 +29,7 @@ const Cart = () => {
               </div>
             </td>
             <td>
-              <input type="number" value='1' />
+              <input type="number" />
             </td>
             <td>$50.00</td>
           </tr>
@@ -46,7 +46,7 @@ const Cart = () => {
               </div>
             </td>
             <td>
-              <input type="number" value='1' />
+              <input type="number"  />
             </td>
             <td>$50.00</td>
           </tr>
@@ -63,7 +63,7 @@ const Cart = () => {
               </div>
             </td>
             <td>
-              <input type="number" value='1' />
+              <input type="number"  />
             </td>
             <td>$50.00</td>
           </tr>

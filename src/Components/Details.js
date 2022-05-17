@@ -38,16 +38,16 @@ const Details = () => {
                 <img src={img} width="100%" alt=""/>
                 <div className="small-img-row">
                     <div className="small-img-col">
-                        <img src={galary1} className="small-img"  onChange={firstimg} onClick={firstimg} alt=""/>
+                        <img src={galary1} className="small-img"  onClick={firstimg} alt=""/>
                     </div>
                     <div className="small-img-col">
-                        <img src={galary2} className="small-img" onChange={secondimg} onClick={secondimg} alt=""/>
+                        <img src={galary2} className="small-img"  onClick={secondimg} alt=""/>
                     </div>
                     <div className="small-img-col">
-                        <img src={galary3} className="small-img" onChange={thirdimg} onClick={thirdimg}  alt=""/>
+                        <img src={galary3} className="small-img" onClick={thirdimg}  alt=""/>
                     </div>
                     <div className="small-img-col">
-                        <img src={galary4} className="small-img" onChange={fourthimg} onClick={fourthimg}  alt=""/>
+                        <img src={galary4} className="small-img"  onClick={fourthimg}  alt=""/>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ const Details = () => {
                     <option>Medium</option>
                     <option>Small</option>
                 </select>
-                <input type="number" value="1"/>
+                <input type="number"/>
                 <Link to="/cart" className="btn">Add to Cart</Link>
                 <h3>Product Details</h3>
                 <br/>

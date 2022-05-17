@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 import image1 from '../../images/image1.png'
-import Featured from '../Home/Featured'
+import Featured from './Featured'
 import FeaturedProducts from './FeaturedProducts'
 import LatestProducts from './LatestProducts'
 import Exclusive from './Exclusive'
 import Testimonial from './Testimonial'
 import Brand from './Brand'
+
 
 const Home = () => {
   return (
@@ -24,12 +25,12 @@ const Home = () => {
         <img src={image1} alt="" />
       </div>
     </div>
-    <Featured/>
-    <FeaturedProducts/>
-    <LatestProducts/>
-    <Exclusive/>
-    <Testimonial/>
-    <Brand/>
+      <Featured/>
+      <FeaturedProducts/>
+      <LatestProducts/>
+      <Exclusive/>
+      <Testimonial/>
+      <Brand/>
   </>
   )
 }

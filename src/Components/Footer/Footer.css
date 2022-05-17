@@ -93,20 +93,17 @@ h3{
         text-align: center;
     }
     .store{
-       margin: 1rem auto;
-
+        flex-direction: column;
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .apple{
+        margin-left: 0 !important;
+        margin-top: 0.8rem !important;
     }
 }
 @media screen and (max-width:340px) {
-   .store{
-       flex-direction: column;
-       width: 90%;
-       margin: 1rem auto;
-   }
-   .apple{
-       margin-left: 0 !important;
-       margin-top: 0.8rem !important;
-   }
+   
    .center{
        padding: 0 !important;
    }
